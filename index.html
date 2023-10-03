@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mario Lopez</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://github.com/lopezm8/portfolio_website" class="link"
+          >ML.</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#resume">Resume</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <div class="flex-container">
+        <!-- Image section -->
+        <div class="left-section">
+            <div class="image-container">
+                <img alt="Your Alt Text" src="images/logo_2ml.png" />
+            </div>
+        </div>
+        
+        <!-- About section -->
+        <div class="right-section">
+            <div class="about center">
+                <h1>Hello, I am</h1>
+                <h1><span class="about__name">Mario Lopez.</span></h1>
+                <h3 class="about__role">Software Engineer.</h3>
+                <p class="about__desc">
+                  I'm a devoted Software Engineer specializing in Python, React and Node.js, with a zeal for solving complex problems and building intuitive digital solutions. Whether it is creating responsive UIs or optimizing backend logic, my passion lies in delivering high-quality software that elevates the user experience. Let's innovate together! 
+                </p>
+                <div class="about__contact center">
+                    <a href="https://example.com">
+                        <span class="btn btn--outline">Resume</span>
+                    </a>
+                    <a href="https://github.com/lopezm8" aria-label="github" class="link link--icon">
+                        <i aria-hidden="true" class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mariovlopez" aria-label="linkedin" class="link link--icon">
+                        <i aria-hidden="true" class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <img src="images/prop_on_demand3.png" alt="Image description for project 1">
+            <h3>PropOnDemand Anesthesia On-Call Scheduling</h3>
+            <p class="project__description">
+              PropOnDemand is an intelligent anesthesia on-call scheduling application, 
+              designed to optimize and automate the scheduling processes for anesthesiologists at 
+              PIH Health Downey. Developed using JavaScript and React, it seamlessly coordinates 
+              anesthesiologist schedules, incorporating vacation and on-call assignments, 
+              to ensure equitable workload distribution and enhance department efficiency. 
+              By minimizing manual oversight, this solution not only improves the scheduling accuracy 
+              but also boosts staff satisfaction and resource allocation, thanks to the robustness, 
+              user-friendly, and intelligent design.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">Axios</li>
+              <li class="project__stack-item">Git</li>
+              <li class="project__stack-item">GitHub</li>
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">CSS</li>
+            </ul>
+
+            <a
+              href="https://github.com/lopezm8/anesthesia_scheduler_pihd"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://propondemand.netlify.app/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <img src="images/bel_internship.png" alt="Image description for project 1">
+            <h3>Training a CNN to Detect Epileptic Spikes in EEG</h3>
+            <p class="project__description">
+              Worked with a team of engineers to design a convolutional neural network (CNN) 
+              that detects and classifies epileptic spikes in EEG data. The data, sourced from 
+              the Temple University Events Corpus, underwent preprocessing steps like filtering, 
+              normalization, and segmentation. With the use of Python and PyTorch, the CNN model 
+              was trained and achieved a 60% accuracy in classifying waveforms. A complementary 
+              EEG plotting script was also developed to allow users to visualize and adjust waveforms. 
+              Throughout the project, comprehensive testing ensured model reliability, and clear 
+              documentation was provided for users.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">PyTorch</li>
+              <li class="project__stack-item">EDFpy</li>
+              <li class="project__stack-item">Matplotlib</li>
+              <li class="project__stack-item">Git</li>
+              <li class="project__stack-item">GitHub</li>
+            </ul>
+
+            <a
+              href="https://github.com/lopezm8"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://github.com/lopezm8"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <img src="images/wiki_scraper2.png" alt="Image description for project 1">
+            <h3>Anesthesia Encylopedia Application</h3>
+            <p class="project__description">
+              The Anesthesia_App is a tailored application website, crafted to provide 
+              multifaceted options for healthcare providers specializing in anesthesia. 
+              A pivotal component is its innovative web scraping microservice, which utilizes 
+              Axios and Cheerio modules to adeptly extract specific content from targeted web pages, 
+              enhancing user accessibility to pertinent information without direct navigation to 
+              secondary sites. Through a methodical approach, the microservice engages with website URLs,
+              parses requisite HTML data, and then Cheerio extrapolates the desired text, streamlining 
+              the return of detailed descriptions (such as those from Oxford Medical Education) directly 
+              to the user on AnesthesiaApp. A meticulous UML Sequence Diagram and well-articulated code 
+              snippets provide a clear pathway for developers seeking to harness similar web scraping 
+              capabilities, ensuring usability and functionality within their applications.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Axios</li>
+              <li class="project__stack-item">Cheerio</li>
+              <li class="project__stack-item">Express</li>
+              <li class="project__stack-item">Node.js</li>
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">CORS</li>
+            </ul>
+
+            <a
+              href="https://github.com/lopezm8/Anesthesia_App"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://github.com/lopezm8"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">TypeScript</li>
+          <li class="skills__list-item btn btn--plain">React</li>
+          <li class="skills__list-item btn btn--plain">Redux</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">Material UI</li>
+          <li class="skills__list-item btn btn--plain">CI/CD</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:mario.lopez088@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/lopezm8"
+        class="link footer__link"
+      >
+        Created By Mario Lopez
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
